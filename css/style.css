@@ -1,0 +1,146 @@
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f3f0e7;
+    color: #28382b;
+    line-height: 1.6;
+}
+
+/* Main website wrapper */
+
+.site-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fffdf7;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Website header */
+
+.site-header {
+    background-color: #294735;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.site-header p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    color: #e0e8d9;
+}
+
+/* Navigation bar */
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #dce4d4;
+    padding: 15px;
+}
+
+.site-nav a {
+    color: #294735;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background-color: #294735;
+    color: #ffffff;
+}
+
+/* Main content */
+
+.main-content {
+    padding: 35px;
+}
+
+.main-content h2 {
+    color: #294735;
+    border-bottom: 2px solid #c3cfb5;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+/* Decorative divider */
+
+.woodland-divider {
+    height: 5px;
+    background-color: #91a77c;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* News articles */
+
+.news-article {
+    background-color: #f7f6ef;
+    border-left: 5px solid #66865b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.news-article h3 {
+    color: #405d3d;
+    margin-top: 0;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #294735;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive layout for smaller screens */
+
+@media (max-width: 600px) {
+    .site-wrapper {
+        width: 100%;
+    }
+
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
